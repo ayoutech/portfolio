@@ -147,6 +147,11 @@ a.card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 
 .stat b{display:block;font-family:var(--f-display);font-size:clamp(30px,4vw,42px);font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
 .stat span{font-size:14px;color:var(--muted)}
 
+.facts-band .stat{display:grid;gap:6px;align-content:start}
+.facts-band .stat b{font-size:clamp(18px,2vw,21px);line-height:1.25;font-weight:700;text-wrap:balance}
+.facts-band .stat .label{font-size:11px}
+.facts-band .stat{transition:background .2s}
+.facts-band .stat:hover{background:var(--sunk)}
 .method{display:grid;grid-template-columns:repeat(5,1fr);counter-reset:s;list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden}
 .method li{padding:20px 18px;border-right:1px solid var(--line);counter-increment:s;min-width:0;display:grid;gap:10px;align-content:start;transition:background .2s}
 .method li:hover{background:var(--sunk)}
